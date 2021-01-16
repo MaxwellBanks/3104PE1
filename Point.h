@@ -5,21 +5,21 @@ class Point{
     public:
         //Constructors
         Point();
-        Point(int x_coordinate, int y_coordinate);
+        Point(float x_input, float y_input);
 
-        int GetXCoordinate();
-        int SetXCoordinate(int new_x);
+        float GetXCoordinate();
+        float SetXCoordinate(float new_x);
 
-        int GetYCoordinate();
-        int SetYCoordinate(int new_y);
+        float GetYCoordinate();
+        float SetYCoordinate(float new_y);
 
         float Distance(Point second_point);
 
-        void Translate(int translation_value);
+        void Translate(float translation_value);
 
     private:
-        int x_coordinate_;
-        int y_coordinate_;
+        float x_coordinate_;
+        float y_coordinate_;
 }
 
 
