@@ -8,10 +8,10 @@ class Point{
         Point(float x_input, float y_input);
 
         float GetXCoordinate();
-        float SetXCoordinate(float new_x);
+        void SetXCoordinate(float new_x);
 
         float GetYCoordinate();
-        float SetYCoordinate(float new_y);
+        void SetYCoordinate(float new_y);
 
         float Distance(Point second_point);
 
@@ -20,7 +20,7 @@ class Point{
     private:
         float x_coordinate_;
         float y_coordinate_;
-}
+};
 
 
 #endif

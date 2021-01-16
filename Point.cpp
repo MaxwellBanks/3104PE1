@@ -15,7 +15,7 @@ float Point::GetXCoordinate(){
     return x_coordinate_;
 }
 
-float Point::SetXCoordinate(float new_x){
+void Point::SetXCoordinate(float new_x){
     x_coordinate_ = new_x;
 }
 
@@ -23,20 +23,17 @@ float Point::GetYCoordinate(){
     return y_coordinate_;
 }
 
-float Point::SetYCoordinate(float new_y){
+void Point::SetYCoordinate(float new_y){
     y_coordinate_ = new_y;
 }
 
 float PythagoreanTheorem(float x_distance, float y_distance){
-    return sqrt((x_distance ** 2) + (y_distance ** 2))
+    return sqrt(pow(x_distance, 2) + pow(y_distance, 2));
 }
 
 float Point::Distance(Point second_point){
-    second_x = second_point.GetXCoordinate();
-    second_y = second_point.GetYCoordinate();
-
-    x_distance = std::abs(x_coordinate_ - second_x);
-    y_distance = std::abs(y_coordinate_ - second_y);
+    float x_distance = std::abs(x_coordinate_ - second_point.GetXCoordinate());
+    float y_distance = std::abs(y_coordinate_ - second_point.GetYCoordinate());
 
     return PythagoreanTheorem(x_distance, y_distance);
 }
