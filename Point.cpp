@@ -25,7 +25,7 @@ Point::Point(float x_input, float y_input){
 /*
 Returns the x value of the point
 */
-float Point::GetXCoordinate(){
+float Point::get_x_coordinate(){
     return x_coordinate_;
 }
 
@@ -42,7 +42,7 @@ void Point::SetXCoordinate(float new_x){
 /*
 Returns the y value of the point
 */
-float Point::GetYCoordinate(){
+float Point::get_y_coordinate(){
     return y_coordinate_;
 }
 
@@ -72,7 +72,7 @@ hypotenuse
     The distance between two points that together form each vertice of a
     right triangle's hypotenuse
 */
-float PythagoreanTheorem(float base, float heigh){
+float PythagoreanTheorem(float base, float height){
     return sqrt(pow(base, 2) + pow(height, 2));
 }
 
@@ -86,8 +86,8 @@ Calculates the distance between this point and a second point
 */
 float Point::Distance(Point second_point){
     //std::abs() is used to ensure the difference between coordinates is always positive
-    float x_distance = std::abs(x_coordinate_ - second_point.GetXCoordinate());
-    float y_distance = std::abs(y_coordinate_ - second_point.GetYCoordinate());
+    float x_distance = std::abs(x_coordinate_ - second_point.get_x_coordinate());
+    float y_distance = std::abs(y_coordinate_ - second_point.get_y_coordinate());
 
     return PythagoreanTheorem(x_distance, y_distance);
 }

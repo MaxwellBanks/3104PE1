@@ -7,10 +7,10 @@ class Point{
         Point();
         Point(float x_input, float y_input);
 
-        float GetXCoordinate();
+        float get_x_coordinate();
         void SetXCoordinate(float new_x);
 
-        float GetYCoordinate();
+        float get_y_coordinate();
         void SetYCoordinate(float new_y);
 
         float Distance(Point second_point);
