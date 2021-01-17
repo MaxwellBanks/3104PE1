@@ -21,9 +21,9 @@ Prints the coordinates of all points
 */
 void PrintPointCoordinates(Point point1, Point point2, Point point3){
     std::cout << "Point Coordinates" << std::endl;
-    std::cout << "Point 1: (" << point1.GetXCoordinate() << "," << point1.GetYCoordinate() << ")" << std::endl;
-    std::cout << "Point 2: (" << point2.GetXCoordinate() << "," << point2.GetYCoordinate() << ")" << std::endl;
-    std::cout << "Point 3: (" << point3.GetXCoordinate() << "," << point3.GetYCoordinate() << ")" << std::endl;
+    std::cout << "Point 1: (" << point1.get_x_coordinate() << "," << point1.get_y_coordinate() << ")" << std::endl;
+    std::cout << "Point 2: (" << point2.get_x_coordinate() << "," << point2.get_y_coordinate() << ")" << std::endl;
+    std::cout << "Point 3: (" << point3.get_x_coordinate() << "," << point3.get_y_coordinate() << ")" << std::endl;
     std::cout << std::endl;
 }
 
